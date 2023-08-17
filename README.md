@@ -6,14 +6,6 @@ Este é um projeto de gerenciamento e controle de gastos com veículos.
 
 🚧 O projeto ainda está na fase de início. Mais informações serão adicionadas em breve!
 
-## Alterações Recentes
-
-- **Fix:** Criado arquivo .gitignore e requirements
-  _Há 1 hora_
-
-- **Feat:** Criado o app para gerenciar gastos e serviços com automóveis
-  _Há 2 horas_
-
 ## Como Contribuir
 
 1. Clone este repositório.
