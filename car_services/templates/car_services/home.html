@@ -11,10 +11,17 @@
     
 
 {% block content %}
-<div class="container">
+    <div class="container">
         <h2>Home page </h2>
-        TESTE
-        <button type="button" class="btn btn-primary">Primary</button>
+
+        
+        <h2>Lista de carros</h2>
+        <ul>
+            {% for vehicle in vehicles %}
+                <li>{{ vehicle.modelo }} - {{ vehicle.usuario }} </li>
+                {% endfor %}
+        </ul>
+            
     </div>
 {% endblock content %}
     
