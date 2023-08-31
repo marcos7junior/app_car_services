@@ -2,10 +2,26 @@
 {% load static %}
 
 
+{% block styles %}
+
+{% endblock styles %}
+    
+
 {% block title %} Home page {% endblock title %}
     
 
 {% block content %}
-    <h2>Home page </h2>
+    <div class="container">
+        <h2>Home page </h2>
+
+        
+        <h2>Lista de carros</h2>
+        <ul>
+            {% for vehicle in vehicles %}
+                <li>{{ vehicle.modelo }} - {{ vehicle.usuario }} </li>
+                {% endfor %}
+        </ul>
+            
+    </div>
 {% endblock content %}
     

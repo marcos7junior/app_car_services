@@ -1,9 +1,11 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'car_services/bootstrap-4.0.0-dist/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'car_services/css/style.css' %}">
     {% block styles %} {% endblock styles %}
         
@@ -14,9 +16,10 @@
     <h1>Car Services</h1>
     {% block content %} {% endblock content %}
         
+
+    <script src="{% static 'car_services/jquery3.7.1/jquery.js' %}" ></script>
+    <script src="{% static 'car_services/bootstrap-4.0.0-dist/js/bootstrap.min.js' %}" ></script>
     <script src="{% static 'car_services/js/main.js' %}" ></script>
-    
     {% block scripts %} {% endblock scripts %}
-        
 </body>
 </html>
